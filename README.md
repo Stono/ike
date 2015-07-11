@@ -1,5 +1,5 @@
 # stono/ike
-This container came about because in newer version of openssl I'm unable to connect to peers using older 1024bit certificates.
+This container came about because in newer versions of openssl I'm unable to connect to peers using older 1024bit certificates.
 
 Unfortuantely those targets aren't going to update their certifcates any time soon, and at the same time I am unwilling to downgrade openssl on my machine to accomodate them!  
 
