@@ -3,7 +3,9 @@ This container came about because in newer versions of openssl I'm unable to con
 
 Unfortuantely those targets aren't going to update their certifcates any time soon, and at the same time I am unwilling to downgrade openssl on my machine to accomodate them!  
 
-This container encapsulates ike(c/d) with `openssl-1.0.1e-30` which is the most current version of openssl that I found which still works with these older certificates.
+This docker container encapsulates ike(c/d) with `openssl-1.0.1e-30` which is the most current version of openssl that I found which still works with these older certificates.
+
+__NOTE__: This is published on docker registry, so you don't need to clone this repo etc.  Just install docker and type the commands below.
 
 ## Using the container
 The container needs to be run with `privileged` and `net=host` as at the end of the day, you're creating a VPN tunnel and it needs to play with your network stack.
