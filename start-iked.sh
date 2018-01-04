@@ -39,6 +39,10 @@ iked -F &
 IKED_PID=$!
 echo "IKEd started."
 
+#Modification to take into account that some site files are not opened using cwd due to their filename being longer than 6 caracters - JohanD (See Issue 1)
+/bin/mkdir /root/.ike
+/bin/ln /sites/ /root/.ike/sites -s
+
 echo "Starting IKEc for $SITE..."
 $COMMAND &
 IKEC_PID=$!
